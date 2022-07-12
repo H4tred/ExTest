@@ -1,2 +1,10 @@
-# ExTest
+# Example for testing in Java
 JUnit Guide
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
