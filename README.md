@@ -1,2 +1,2 @@
-# +Ex+ample for +test+ing in Java
+# Example for testing in Java
 JUnit Guide
