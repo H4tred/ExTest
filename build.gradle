@@ -13,11 +13,16 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("com.jayway.jsonpath:json-path:2.7.0")
+    implementation('org.projectlombok:lombok:1.18.24')
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.1")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation('org.junit.jupiter:junit-jupiter-api:5.8.2')
     testImplementation("io.github.glytching:junit-extensions:2.5.0")
     testImplementation("org.assertj:assertj-core:3.23.1")
+    testImplementation("org.hamcrest:hamcrest-library:2.2")
 }
 
 tasks.named('test') {
