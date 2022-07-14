@@ -1,2 +1,2 @@
 # Example for testing in Java
-JUnit Guide
+Unit & Integration testing
