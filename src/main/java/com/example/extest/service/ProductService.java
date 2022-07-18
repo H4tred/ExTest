@@ -21,8 +21,7 @@ import java.util.stream.Collectors;
 @Transactional
 public class ProductService {
 
-    @Getter
-    @Setter(onMethod_ = @Autowired)
+    @Autowired
     private ProductRepository productRepository;
 
     public void clear() {
@@ -31,12 +30,12 @@ public class ProductService {
 
     public Product findById(long productId) {
 
-        Optional<Product> product = productRepository.findById(productId);
+        Product product = productRepository.findById(productId);
 
-        return product.orElse(null);
+        return product;
 
     }
-
+/*
     public List<Product> findByProductGroup(long productGroupId){
         return productRepository.findByProductGroupId(productGroupId);
     }
@@ -67,5 +66,5 @@ public class ProductService {
 
     public Set<Long> productsWithNoCategories(Set<Long> productIds){
         return productRepository.productsWithNoCategories(productIds);
-    }
+    }*/
 }

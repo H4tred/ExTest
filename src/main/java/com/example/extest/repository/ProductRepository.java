@@ -7,7 +7,9 @@ import java.util.List;
 import java.util.Set;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
-    List<Product> findByProductGroupId(long productGroupId);
+
+    Product findById(long id);
+    /*List<Product> findByProductGroupId(long productGroupId);
 
     List<Product> findAllByProductCategoryIdAndProductGroup(long employeeId, String function, Long productCategoryId, Set<Long> productIds);
 
@@ -19,5 +21,5 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     List<Product> findAllProductId();
 
-    Set<Long> productsWithNoCategories(Set<Long> productIds);
+    Set<Long> productsWithNoCategories(Set<Long> productIds);*/
 }

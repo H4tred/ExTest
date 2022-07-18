@@ -4,25 +4,21 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Product {
+public class ProductGroup {
+
     @Id
     long id;
 
     String name;
 
-    public Product() {
-
+    public ProductGroup(long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
-    public long getProductGroup() {
-        return productGroup;
-    }
+    public ProductGroup() {
 
-    public void setProductGroup(long productGroup) {
-        this.productGroup = productGroup;
     }
-
-    long productGroup;
 
     public long getId() {
         return id;
@@ -38,11 +34,5 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Product(long id, String name, long productGroup) {
-        this.id = id;
-        this.name = name;
-        this.productGroup = productGroup;
     }
 }
